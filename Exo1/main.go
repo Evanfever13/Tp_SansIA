@@ -4,7 +4,8 @@ import "fmt"
 
 func TwoSum(nums []int, target int) (int, int) {
 	for i := 0; i < len(nums); i++ {
-		for j := 0; j < len(nums); j++ {
+		// Modification : On démarre j à i+1 pour éviter de retester les mêmes paires et d’avoir i == j
+		for j := i + 1; j < len(nums); j++ {
 			if nums[i]+nums[j] == target {
 				return i, j
 			}
