@@ -19,3 +19,7 @@ func PrintHollowDiamond(r int) {
 		fmt.Println()
 	}
 }
+
+func main() {
+	PrintHollowDiamond(4)
+}
